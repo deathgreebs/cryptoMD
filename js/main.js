@@ -128,7 +128,7 @@ xhr.onload = () => {
 
     function cryptoCard(mas, coinName, htmlID, htmlID2) {
         mas.push(cryptoPrice["RAW"][`${coinName}`]["USD"]["PRICE"])
-        mas.push(String(cryptoPrice["RAW"][`${coinName}`]["USD"]["CHANGEPCT24HOUR"].toFixed(1)))
+        mas.push(String(cryptoPrice["RAW"][`${coinName}`]["USD"]["CHANGEPCT24HOUR"].toFixed(2)))
         console.log(`${coinName}: `, cryptoPrice["RAW"][`${coinName}`]["USD"]["PRICE"])
         htmlID.innerHTML = `$${mas[0]}`
         if (mas[1][0] === '-') {
