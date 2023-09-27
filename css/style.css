@@ -535,12 +535,34 @@ body {
   justify-content: flex-start;
 }
 
-marquee {
-  margin-bottom: 130px;
+.custom-marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
 }
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*marquee {*/
+/*  margin-bottom: 130px;*/
+/*}*/
 
 .cards {
   display: flex;
+  margin-bottom: 130px;
 }
 .cards__wrap {
   display: flex;

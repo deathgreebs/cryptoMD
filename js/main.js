@@ -141,6 +141,25 @@ xhr.onload = () => {
         }
     }
 
+    const marqueeContainer = document.querySelector('.marquee-container');
+
+    function generateCard() {
+        const card = document.createElement('div');
+        card.className = 'marquee-card';
+        card.textContent = 'Ваша карточка'; // Здесь можно задать содержание карточки
+        marqueeContainer.appendChild(card);
+    }
+
+    function checkAndGenerate() {
+        const cards = document.querySelectorAll('.marquee-card');
+        if (cards.length === 0 || cards[0].getBoundingClientRect().right <= 0) {
+            generateCard();
+        }
+    }
+
+    setInterval(checkAndGenerate, 1000); // Проверка и генерация каждую секунду
+
+
     function setResult(rcc, vcc) {
         res = cryptoPrice["RAW"][`${rcc}`][`${vcc}`]["PRICE"]
         coin.innerHTML = `<img src=\"images/${rcc}.svg\" alt=\"\">`
