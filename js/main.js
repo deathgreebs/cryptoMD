@@ -352,12 +352,12 @@ xhr.send(null);
 function sendMessageToTelegram() {
     var formData = new FormData(document.getElementById('telegramForm'));
     var botToken = '6523194156:AAEZLdp4K8obQIAJtJTJUY5JNZHH9R0E3PI';
-    var chatId = '5441483969';
+    var chatId = '-1001922172020';
 
     // Создаем объект сообщения
     var message = "НОВАЯ ЗАЯВКА" +
-            "Валюта: " + `${inputPrice.value} ${rc}` +
-            "Имя: " + formData.get('name') +
+            "\nВалюта: " + `${inputPrice.value} ${rc}` +
+            "\nИмя: " + formData.get('name') +
         "\nТелефон: " + formData.get('tel') +
         "\nГород: " + formData.get('city') +
         "\nEmail: " + formData.get('email') +
