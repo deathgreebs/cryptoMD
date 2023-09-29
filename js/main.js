@@ -358,7 +358,13 @@ function sendMessageToTelegram() {
     var message = "Имя: " + formData.get('name') +
         "\nТелефон: " + formData.get('tel') +
         "\nГород: " + formData.get('city') +
-        "\nEmail: " + formData.get('email');
+        "\nEmail: " + formData.get('email')
+        "\nEUR: " + formData.get('checkEUR') +
+        "\nUSD: " + formData.get('checkUSD') +
+        "\nLEI: " + formData.get('checkLEI') +
+        "\nCash: " + formData.get('checkCash') +
+        "\nCard: " + formData.get('checkCard') 
+        ;
 
     // Формируем URL для отправки запроса к Telegram Bot API
     var apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
