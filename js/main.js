@@ -358,7 +358,7 @@ function sendMessageToTelegram() {
     var message = "Имя: " + formData.get('name') +
         "\nТелефон: " + formData.get('tel') +
         "\nГород: " + formData.get('city') +
-        "\nEmail: " + formData.get('email')
+        "\nEmail: " + formData.get('email') +
         "\nEUR: " + formData.get('checkEUR') +
         "\nUSD: " + formData.get('checkUSD') +
         "\nLEI: " + formData.get('checkLEI') +
