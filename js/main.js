@@ -355,7 +355,9 @@ function sendMessageToTelegram() {
     var chatId = '5441483969';
 
     // Создаем объект сообщения
-    var message = "Имя: " + formData.get('name') +
+    var message = "НОВАЯ ЗАЯВКА" +
+            "Валюта: " + `${inputPrice.value} ${rc}` +
+            "Имя: " + formData.get('name') +
         "\nТелефон: " + formData.get('tel') +
         "\nГород: " + formData.get('city') +
         "\nEmail: " + formData.get('email') +
