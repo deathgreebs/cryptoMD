@@ -1,0 +1,1622 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+//select { /* 1 */
+//  text-transform: none;
+//}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+$green: #bafd02;
+$grey: #1f1f1f;
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-BoldItalic.eot');
+  src: local('Inter Bold Italic'), local('Inter-BoldItalic'),
+  url('../fonts/Inter-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-BoldItalic.woff2') format('woff2'),
+  url('../fonts/Inter-BoldItalic.woff') format('woff'),
+  url('../fonts/Inter-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-MediumItalic.eot');
+  src: local('Inter Medium Italic'), local('Inter-MediumItalic'),
+  url('../fonts/Inter-MediumItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-MediumItalic.woff2') format('woff2'),
+  url('../fonts/Inter-MediumItalic.woff') format('woff'),
+  url('../fonts/Inter-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-ThinItalicBETA.eot');
+  src: local('Inter Thin Italic BETA'), local('Inter-ThinItalicBETA'),
+  url('../fonts/Inter-ThinItalicBETA.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-ThinItalicBETA.woff2') format('woff2'),
+  url('../fonts/Inter-ThinItalicBETA.woff') format('woff'),
+  url('../fonts/Inter-ThinItalicBETA.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.eot');
+  src: local('Inter Regular'), local('Inter-Regular'),
+  url('../fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-Regular.woff2') format('woff2'),
+  url('../fonts/Inter-Regular.woff') format('woff'),
+  url('../fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Black.eot');
+  src: local('Inter Black'), local('Inter-Black'),
+  url('../fonts/Inter-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-Black.woff2') format('woff2'),
+  url('../fonts/Inter-Black.woff') format('woff'),
+  url('../fonts/Inter-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-BlackItalic.eot');
+  src: local('Inter Black Italic'), local('Inter-BlackItalic'),
+  url('../fonts/Inter-BlackItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-BlackItalic.woff2') format('woff2'),
+  url('../fonts/Inter-BlackItalic.woff') format('woff'),
+  url('../fonts/Inter-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-LightBETA.eot');
+  src: local('Inter Light BETA'), local('Inter-LightBETA'),
+  url('../fonts/Inter-LightBETA.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Inter-LightBETA.woff2') format('woff2'),
+  url('../fonts/Inter-LightBETA.woff') format('woff'),
+  url('../fonts/Inter-LightBETA.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-SemiBold.eot');
+  src: local('Inter Semi Bold'), local('Inter-SemiBold'),
+  url('../fonts/Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+  url('../fonts/Inter-SemiBold.woff') format('woff'),
+  url('../fonts/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-ExtraBoldItalic.eot');
+  src: local('Inter Extra Bold Italic'), local('Inter-ExtraBoldItalic'),
+  url('../fonts/Inter-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-ExtraBoldItalic.woff2') format('woff2'),
+  url('../fonts/Inter-ExtraBoldItalic.woff') format('woff'),
+  url('../fonts/Inter-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.eot');
+  src: local('Inter Bold'), local('Inter-Bold'),
+  url('../fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-Bold.woff2') format('woff2'),
+  url('../fonts/Inter-Bold.woff') format('woff'),
+  url('../fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-ExtraLightItalicBETA.eot');
+  src: local('Inter Extra Light Italic BETA'), local('Inter-ExtraLightItalicBETA'),
+  url('../fonts/Inter-ExtraLightItalicBETA.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-ExtraLightItalicBETA.woff2') format('woff2'),
+  url('../fonts/Inter-ExtraLightItalicBETA.woff') format('woff'),
+  url('../fonts/Inter-ExtraLightItalicBETA.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-ExtraLightBETA.eot');
+  src: local('Inter Extra Light BETA'), local('Inter-ExtraLightBETA'),
+  url('../fonts/Inter-ExtraLightBETA.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-ExtraLightBETA.woff2') format('woff2'),
+  url('../fonts/Inter-ExtraLightBETA.woff') format('woff'),
+  url('../fonts/Inter-ExtraLightBETA.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-ExtraBold.eot');
+  src: local('Inter Extra Bold'), local('Inter-ExtraBold'),
+  url('../fonts/Inter-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-ExtraBold.woff2') format('woff2'),
+  url('../fonts/Inter-ExtraBold.woff') format('woff'),
+  url('../fonts/Inter-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-ThinBETA.eot');
+  src: local('Inter Thin BETA'), local('Inter-ThinBETA'),
+  url('../fonts/Inter-ThinBETA.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-ThinBETA.woff2') format('woff2'),
+  url('../fonts/Inter-ThinBETA.woff') format('woff'),
+  url('../fonts/Inter-ThinBETA.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-LightItalicBETA.eot');
+  src: local('Inter Light Italic BETA'), local('Inter-LightItalicBETA'),
+  url('../fonts/Inter-LightItalicBETA.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-LightItalicBETA.woff2') format('woff2'),
+  url('../fonts/Inter-LightItalicBETA.woff') format('woff'),
+  url('../fonts/Inter-LightItalicBETA.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Italic.eot');
+  src: local('Inter Italic'), local('Inter-Italic'),
+  url('../fonts/Inter-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-Italic.woff2') format('woff2'),
+  url('../fonts/Inter-Italic.woff') format('woff'),
+  url('../fonts/Inter-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-SemiBoldItalic.eot');
+  src: local('Inter Semi Bold Italic'), local('Inter-SemiBoldItalic'),
+  url('../fonts/Inter-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-SemiBoldItalic.woff2') format('woff2'),
+  url('../fonts/Inter-SemiBoldItalic.woff') format('woff'),
+  url('../fonts/Inter-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.eot');
+  src: local('Inter Medium'), local('Inter-Medium'),
+  url('../fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Inter-Medium.woff2') format('woff2'),
+  url('../fonts/Inter-Medium.woff') format('woff'),
+  url('../fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: url("../images/BG.png");
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.header {
+  background: #000000;
+  margin-bottom: 56px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1280px;
+    //padding: 20px 0;
+    padding: 4px 0;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 164.04px;
+    height: 48px;
+    background: #BAFD02;
+    border-radius: 4px;
+  }
+  &__rightside {
+    display: flex;
+    align-items: center;
+  }
+  &__links {
+    display: flex;
+    padding: 0;
+    margin-right: 52px;
+    list-style: none;
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 125px;
+      height: 40px;
+      background: #000000;
+      border-radius: 4px;
+      transition: flex 0.3s ease;
+      margin-right: 2px;
+      margin-left: 2px;
+      .active {
+        background: $grey;
+        color: white;
+      }
+      &:hover {
+        outline: 1px solid $green;
+        color: white;
+      }
+      &:active {
+        background: $grey;
+        color: white;
+      }
+      a {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #8D8D8D;
+        text-decoration: none;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 96px;
+    height: 48px;
+    background: $grey;
+    border-radius: 40px;
+    transition: flex 0.3s ease;
+    button {
+      background: #BAFD02;
+      border-radius: 150px;
+      width: 40px;
+      height: 40px;
+      border: none;
+      margin: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: $grey;
+      transition: flex 0.3s ease;
+    }
+  }
+  .headerBtn-active {
+    transition: flex 0.3s ease;
+    justify-content: flex-start;
+  }
+}
+marquee {
+  margin-bottom: 130px;
+}
+.cards {
+  display: flex;
+  &__wrap {
+    display: flex;
+  }
+}
+.card {
+  padding: 16px;
+  //width: 192px;
+  //height: 168px;
+  width: 160px;
+  height: 145px;
+  background: $grey;
+  border-radius: 16px;
+  margin-right: 12px;
+  margin-left: 12px;
+  &__coin {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    width: 48px;
+    height: 48px;
+    background: black;
+    border-radius: 8px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: white;
+    margin-bottom: 4px;
+  }
+  &__abbreviation {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: white;
+    opacity: 0.5;
+  }
+  &__price {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: white;
+    margin-bottom: 24px;
+  }
+  &__profit {
+    padding: 4px;
+    width: 64px;
+    height: 24px;
+    background: $green;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      margin-right: 6.67px;
+      filter: invert(1);
+    }
+    span {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: black;
+    }
+  }
+  &:nth-child(2n) {
+    background: #FFFFFF;
+    .card {
+      &__logo {
+        background: #F2F2F2;
+      }
+      &__name {
+        color: black;
+      }
+      &__abbreviation {
+        color: black;
+      }
+      &__price {
+        color: black;
+      }
+      &__profit {
+        background: black;
+        img {
+          filter: none;
+        }
+        span {
+          color: white;
+        }
+        color: white;
+      }
+    }
+  }
+}
+.low-arrow {
+  transform: rotate(180deg);
+}
+.main {
+  margin-bottom: 430px;
+  .illustration {
+    position: relative;
+    img {
+      bottom: 0;
+      position: absolute;
+      //right: 0;
+      top: -55px;
+      right: -40px;
+      z-index: -1;
+    }
+  }
+  &__subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-right: 10px;
+  }
+  &__wrap {
+    display: flex;
+    .note {
+      //display: flex;
+      //justify-content: center;
+      //align-items: center;
+      //background: #BAFD02;
+      //width: 20px;
+      //height: 20px;
+      //border-radius: 100%;
+      //color: black;
+    }
+  }
+  &__title  {
+    width: 587px;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    color: white;
+    span {
+      color: $green;
+    }
+  }
+}
+.calculator {
+  &__container {
+    max-width: 1233px;
+    margin: 0 auto;
+    //align-items: center;
+    background: #1F1F1F;
+    border-radius: 16px;
+    padding: 32px;
+  }
+  &__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 33px;
+    a {
+      margin-left: 8px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 33px;
+  }
+  &__block {
+    padding: 32px;
+    background: #000000;
+    border-radius: 24px;
+    width: 100%;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__logo {
+    border-radius: 8px;
+    width: 96px;
+    height: 96px;
+    background: $green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__select {
+    &:after{
+      content: url(../images/SelectArrow.svg);
+      font-size: 25px;
+      width: 50px;
+      height: 30px;
+      position: relative;
+      /* background-color: #FF8080; */
+      z-index: 1;
+      right: 40px;
+      top: -2px;
+      text-align: center;
+    }
+   select {
+     position: relative;
+     padding: 16px;
+     gap: 4px;
+     width: 237px;
+     height: 64px;
+     background: #FFFFFF;
+     border-radius: 8px;
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 24px;
+     line-height: 32px;
+     /* identical to box height, or 133% */
+     letter-spacing: -0.02em;
+       -moz-appearance:none; /* Firefox */
+       -webkit-appearance:none; /* Safari and Chrome */
+     appearance: none;       /* Remove default arrow */
+     //background-image: url('../images/SelectArrow.svg');   /* Add custom arrow */
+     outline: none;
+     option {
+       padding: 16px;
+       gap: 4px;
+
+       width: 237px;
+       height: 56px;
+
+       /* Primary/4 */
+
+       background: #FFFFFF;
+       border-radius: 8px 8px 0px 0px;
+     }
+     &:hover {
+       cursor: pointer;
+     }
+   }
+
+  }
+  &__descr {
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+  }
+  &__input {
+    input {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 16px 24px;
+      gap: 10px;
+      width: 457px;
+      height: 40px;
+      background: #1F1F1F;
+      border-radius: 8px;
+      font-family: 'Russo One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.02em;
+      color: #565555;
+      border: none;
+      transition: .5s all;
+      &:hover {
+        color: white;
+        transition: .5s all;
+        outline: 1px solid $green;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    button {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 64px;
+      height: 72px;
+      background: $green;
+      border-radius: 8px;
+
+      font-family: 'Russo One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -0.02em;
+      color: #1F1F1F;
+
+      border: none;
+    }
+  }
+  &__reverseBtn {
+    display: flex;
+    cursor: pointer;
+    &:hover {
+      cursor: pointer;
+    }
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  &__total {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+  }
+}
+.container {
+  max-width: 1233px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  //align-items: center;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  &__descr {
+    color: #1F1F1F;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+
+  }
+  &__text {
+    .contacts__title {
+      font-family: 'Russo One';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 56px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.02em;
+      margin: 0 auto;
+      margin-bottom: 16px;
+      color: white;
+      width: fit-content;
+      span {
+        color: $green;
+      }
+    }
+    .contacts__subtitle {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #B5B5B5;
+      margin-bottom: 64px;
+    }
+  }
+  &__messengers {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__messenger {
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //padding: 32px;
+    display: flex;
+    width: 215px;
+    height: 226px;
+    background: #1F1F1F;
+    border: 1px solid $green;
+    border-radius: 8px;
+    &:nth-child(2) {
+      background: $green;
+      width: 301px;
+      height: 286px;
+      .contacts__name {
+        color: $grey;
+      }
+      a {
+        background: $grey;
+        color: $green;
+        transition: .5s all;
+        &:hover {
+          background: $green;
+          color: $grey;
+          outline: 1px solid $grey;
+          transition: .5s all;
+        }
+      }
+    }
+    img {
+      margin-bottom: 8px;
+    }
+    a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 32px;
+      gap: 10px;
+      //width: 151px;
+      //height: 50px;
+      background: $green;
+      border-radius: 8px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 18px;
+      color: #1F1F1F;
+      transition: .5s all;
+      &:hover {
+        background: $grey;
+        color: $green;
+        outline: 1px solid $green;
+        transition: .5s all;
+      }
+    }
+  }
+  &__name {
+    margin-bottom: 24px;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+  }
+
+}
+
+#scoinSwap {
+  display: none;
+}
+#spriceSwap {
+  display: none;
+
+}
+.popup__checkboxes {
+  label {
+    width: 80px;
+  }
+}
+
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  opacity: 0; // Скрываем фон и сам попап
+  pointer-events: none; // Запрещаем ему быть целью событий
+  transition: 0.5s all;
+}
+
+.popup__bg.active { // При добавлении класса 'active'
+  opacity: 1; // Показываем фон и попап
+  pointer-events: all; // Возвращаем события
+  transition: 0.5s all;
+  z-index: 999;
+}
+
+.popup {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); // Центрируем и масштабируем в 0 само окно
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 16px;
+  width: 764px;
+  height: 769px;
+  /* Primary/4 */
+
+  background: #FFFFFF;
+  border-radius: 16px;
+  transition: 0.5s all;
+  &__inputs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__cost {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #1F1F1F;
+  }
+  &__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #0A0D13;
+  }
+  &__checkboxes {
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  hr {
+    background: $grey;
+    width: 100%;
+
+  }
+}
+
+.popup.active { // При добавлении класса 'active'
+  transform: translate(-50%, -50%) scale(1); // Так же центрируем и плавно увеличиваем
+  transition: 0.5s all;
+  z-index: 999;
+}
+/* Конец важной части */
+/* Далее код для стилизации формы */
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.popup label {
+  //width: 50px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  display: flex;
+  /* flex-direction: column-reverse; */
+  align-items: flex-start;
+}
+
+.popup .label__text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.popup input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  background: #1F1F1F;
+  border-radius: 50px;
+  margin-right: 8px;
+}
+
+.popup input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  background: #FFFFFF;
+  border: 1px solid #B5B5B5;
+  border-radius: 4px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  &::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #B5B5B5;
+  }
+  + .label__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1F1F1F;
+  }
+}
+
+.popup input[type=checkbox]:focus {
+  border: 1px solid $green;
+}
+
+
+
+
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked),
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked)
+{
+  position: absolute;
+  left: -9999px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label,
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+input[type="checkbox"]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid $grey;
+  background-color: $grey;
+  border-radius: 100%;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  border-radius: 100%;
+  &:hover {
+    border: 1px solid $green;
+  }
+}
+
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  &:hover {
+    border: 1px solid $green;
+  }
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  left: 5px;
+  top: 7px;
+  width: 12px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 3px solid #bafd02;
+  border-bottom: 4px solid #bafd02;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  &:hover {
+    border: 1px solid $green;
+  }
+}
+
+
+
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="radio"]:checked + label:after {
+  opacity: 1;
+}
+
+#check {
+  position: static;
+}
+.popup textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #cfd0d3;
+  font-size: 18px;
+  padding-top: 5px;
+}
+
+
+
+.popup button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  padding: 16px 32px;
+  width: 163px;
+  height: 50px;
+  background: #BAFD02;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.5s all;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+#tradeButton:hover {
+  background: transparent;
+  color: $green;
+  transition: 0.5s all;
+  border: 1px solid $green;
+}
+.popup button:hover {
+  background: transparent;
+  color: $green;
+  transition: 0.5s all;
+  border: 1px solid $green;
+}
+
+#selectForm {
+  &:after{
+    content: url(../images/SelectArrow.svg);
+    font-size: 25px;
+    width: 50px;
+    height: 30px;
+    position: relative;
+    /* background-color: #FF8080; */
+    z-index: 1;
+    right: 40px;
+    top: -2px;
+    text-align: center;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8px 14px;
+  gap: 221px;
+  background: #FFFFFF;
+  border: 1px solid #B5B5B5;
+  border-radius: 4px;
+    position: relative;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+    /* identical to box height, or 133% */
+    letter-spacing: -0.02em;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance: none;       /* Remove default arrow */
+    //background-image: url('../images/SelectArrow.svg');   /* Add custom arrow */
+    outline: none;
+  width: 342px;
+  height: 40px;
+  margin-right: 16px;
+}
+.labelText {
+  display: flex;
+  flex-direction: column;
+
+  .label__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+    margin-right: 8px;
+    margin-left: 8px;
+
+    /* Primary/3 */
+
+    color: #1F1F1F;
+  }
+}
+#checkboxData {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+
+  /* Secondary/1 */
+
+  color: #565555;
+}
+.p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  /* or 157% */
+
+
+  /* Secondary/2 */
+
+  color: #8D8D8D;
+}
+.feedbacks {
+  display: flex;
+  overflow-x: auto;
+  .feedback {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+  padding-bottom: 20px;
+}
+.feed-title {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  margin: 0 auto;
+  //margin-bottom: 16px;
+  color: white;
+  width: fit-content;
+  span {
+    color: $green;
+  }
+
+  margin-bottom: 125px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #7D7D7D;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
