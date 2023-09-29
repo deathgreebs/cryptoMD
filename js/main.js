@@ -351,26 +351,32 @@ xhr.send(null);
 
 function sendMessageToTelegram() {
     var formData = new FormData(document.getElementById('telegramForm'));
+    var botToken = '6523194156:AAEZLdp4K8obQIAJtJTJUY5JNZHH9R0E3PI';
+    var chatId = '5441483969';
+
+    // Создаем объект сообщения
+    var message = "Имя: " + formData.get('name') +
+        "\nТелефон: " + formData.get('tel') +
+        "\nГород: " + formData.get('city') +
+        "\nEmail: " + formData.get('email');
+
+    // Формируем URL для отправки запроса к Telegram Bot API
+    var apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+
+    // Создаем запрос
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', '../send.php'); // Укажите путь к вашему PHP-скрипту
+    xhr.open('POST', apiUrl, true);
 
-    // Отправляем данные в формате JSON
-    xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
-
-    xhr.onload = function () {
-        if (xhr.status === 200) {
+    // Отправляем запрос
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
             alert('Данные успешно отправлены в Telegram.');
-        } else {
+        } else if (xhr.readyState === 4) {
             alert('Ошибка при отправке данных в Telegram.');
         }
     };
 
-    var jsonData = {};
-    formData.forEach(function (value, key) {
-        jsonData[key] = value;
-    });
-
-    xhr.send(JSON.stringify(jsonData));
+    xhr.send();
 }
 // jQuery(document).ready(function () {
 //
