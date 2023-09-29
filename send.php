@@ -15,7 +15,7 @@ $email = $_POST['email'];
 $message = "Имя: $name\nТелефон: $phone\nГород: $city\nEmail: $email";
 
 // Формируем URL для отправки запроса к Telegram Bot API
-$apiUrl = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=" . urlencode($message);
+$apiUrl = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=" . $message;
 
 // Отправляем запрос к Telegram Bot API с использованием cURL
 $ch = curl_init($apiUrl);
