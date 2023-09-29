@@ -17,8 +17,14 @@ $message = "Имя: $name\nТелефон: $phone\nГород: $city\nEmail: $em
 // Формируем URL для отправки запроса к Telegram Bot API
 $apiUrl = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=$chatId&text=" . urlencode($message);
 
-// Отправляем запрос к Telegram Bot API
-$response = file_get_contents($apiUrl);
+// Отправляем запрос к Telegram Bot API с использованием cURL
+$ch = curl_init($apiUrl);
+
+// Настройки cURL-запроса
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+// Выполняем запрос
+$response = curl_exec($ch);
 
 // Проверяем ответ на ошибки (можно добавить дополнительную обработку ошибок)
 if ($response === false) {
@@ -26,4 +32,7 @@ if ($response === false) {
 } else {
     echo "Данные успешно отправлены в Telegram.";
 }
+
+// Закрываем соединение cURL
+curl_close($ch);
 ?>

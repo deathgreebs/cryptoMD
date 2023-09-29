@@ -350,7 +350,7 @@ xhr.send(null);
 
 
 function sendMessageToTelegram() {
-    var formData = new FormData(document.querySelector('.popup'));
+    var formData = new FormData(document.getElementById('telegramForm'));
     var xhr = new XMLHttpRequest();
     xhr.open('POST', '../send.php'); // Укажите путь к вашему PHP-скрипту
 
