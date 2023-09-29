@@ -349,38 +349,60 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
 xhr.send(null);
 
 
+function sendMessageToTelegram() {
+    var formData = new FormData(document.querySelector('.send-form'));
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '../send.php'); // Укажите путь к вашему PHP-скрипту
 
-jQuery(document).ready(function () {
+    // Отправляем данные в формате JSON
+    xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
 
-    $(".tel").mask("+373 (99) 999-999");
-
-
-    jQuery('.send-form').click( function() {
-
-        var form = jQuery(this).closest('form');
-
-        if ( form.valid() ) {
-            // form.css('opacity','.5');
-            var actUrl = form.attr('action');
-
-            jQuery.ajax({
-                url: actUrl,
-                type: 'post',
-                dataType: 'html',
-                data: form.serialize(),
-                success: function(data) {
-                    form.html(data);
-                    form.css('opacity','1');
-                    //form.find('.status').html('форма отправлена успешно');
-                    //$('#myModal').modal('show') // для бутстрапа
-                },
-                error:	 function() {
-                    form.find('.status').html('серверная ошибка');
-                }
-            });
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            alert('Данные успешно отправлены в Telegram.');
+        } else {
+            alert('Ошибка при отправке данных в Telegram.');
         }
+    };
 
+    var jsonData = {};
+    formData.forEach(function (value, key) {
+        jsonData[key] = value;
     });
 
-
-});
+    xhr.send(JSON.stringify(jsonData));
+}
+// jQuery(document).ready(function () {
+//
+//     $(".tel").mask("+373 (99) 999-999");
+//
+//
+//     jQuery('.send-form').click( function() {
+//
+//         var form = jQuery(this).closest('form');
+//
+//         if ( form.valid() ) {
+//             // form.css('opacity','.5');
+//             var actUrl = form.attr('action');
+//
+//             jQuery.ajax({
+//                 url: actUrl,
+//                 type: 'post',
+//                 dataType: 'html',
+//                 data: form.serialize(),
+//                 success: function(data) {
+//                     form.html(data);
+//                     form.css('opacity','1');
+//                     //form.find('.status').html('форма отправлена успешно');
+//                     //$('#myModal').modal('show') // для бутстрапа
+//                 },
+//                 error:	 function() {
+//                     form.find('.status').html('серверная ошибка');
+//                 }
+//             });
+//         }
+//
+//     });
+//
+//
+// });

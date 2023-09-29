@@ -256,7 +256,7 @@
 </section>
 
 <div class="popup__bg">
-    <form class="popup" action="send.php"
+    <form class="popup"
           method="POST">
         <div class="close-popup"></div>
         <div class="popup__cost" id="popupCost"></div>
@@ -339,7 +339,7 @@
             Если заявка не оплачена, в течении 30 минут она автоматически получает статус удаленной. Если Вы оплатили
             заявку, и она получила статус удаленной, обратитесь в поддержку, чтобы восстановить ее.
         </p>
-        <button id="sendBtn" class="send-form" type="submit">Отправить</button>
+        <button id="sendBtn" class="send-form" type="button" onclick="sendMessageToTelegram()">Отправить</button>
         <div class="status"></div>
     </form>
 </div>
