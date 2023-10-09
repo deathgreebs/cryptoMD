@@ -14,18 +14,18 @@
 <div class="header">
     <div class="header__container">
         <div class="header__logo">
-            <a href="#">
+            <a href="index.html">
                 <img src="images/Crypto%20MD.svg" alt="" class="header__img">
             </a>
         </div>
         <div class="header__rightside">
             <ul class="header__links">
-                <li><a href="index.html">Обмен</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-                <li><a href="feedbacks.html">Отзывы</a></li>
+                <li><a href="index.html">Change</a></li>
+<!--                <li><a href="contacts.html">Контакты</a></li>-->
+                <li><a href="feedbacks.html">Feedbacks</a></li>
             </ul>
-            <div class="header__button">
-                <button style="display: none" class="headerBtn" id="headerBtn">RU</button>
+            <div style="display: none" class="header__button">
+                <button  style="display: none" class="headerBtn" id="headerBtn">RU</button>
             </div>
         </div>
     </div>
@@ -156,7 +156,9 @@
 <!--                <img src="images/note.svg" alt="">-->
 <!--            </div>-->
             <div class="main__title">
-                <span>Покупка</span> и <span>продажа</span> криптовалюты <br> за наличные
+
+
+                <span>Buying</span> and <span>selling</span> cryptocurrency <br> for cash
             </div>
         </div>
         <div class="illustration">
@@ -169,7 +171,7 @@
 
 <section class="calculator">
     <div class="calculator__container">
-        <div class="calculator__title">Нужно обменять больше?<a href="#"><img src="images/Telegram.svg" alt=""></a>
+        <div style="display: none" class="calculator__title">Need to exchange more?<a href="#"><img src="images/Telegram.svg" alt=""></a>
         </div>
         <div class="calculator__blocks">
             <div class="calculator__wrapper">
@@ -185,7 +187,7 @@
                                 <option value="3" data-rc="BTC">BTC</option>
                             </select>
                         </div>
-                        <div class="calculator__descr">Отдаете</div>
+                        <div class="calculator__descr">give</div>
                     </div>
                     <div class="calculator__input">
                         <input id="inputPrice" onkeyup="generatePrice()">
@@ -204,7 +206,7 @@
                                 <option value="3" data-vc="RUB">RUB</option>
                             </select>
                         </div>
-                        <div class="calculator__descr">Отдаете</div>
+                        <div class="calculator__descr">give</div>
                     </div>
                     <div class="calculator__input">
                         <input id="inputPriceSwap" onkeyup="generatePriceSwap()">
@@ -226,7 +228,7 @@
                                 <option value="3" data-vc="RUB">RUB</option>
                             </select>
                         </div>
-                        <div class="calculator__descr">Получаете</div>
+                        <div class="calculator__descr">get</div>
                     </div>
                     <div class="calculator__total" id="total">
 
@@ -244,7 +246,7 @@
                                 <option value="3" data-rc="BTC">BTC</option>
                             </select>
                         </div>
-                        <div class="calculator__descr">Получаете</div>
+                        <div class="calculator__descr">get</div>
                     </div>
                     <div class="calculator__total" id="totalSwap">
 
@@ -252,11 +254,11 @@
                 </div>
             </div>
             <div class="calculator__button">
-                <button id="tradeButton" class="open-popup">Обменять</button>
+                <button id="tradeButton" class="open-popup">Change</button>
             </div>
-            <h2 style="color: white; text-align: center">Больше информации и интересностей в нашем приложении</h2>
+            <h2 style="color: white; text-align: center">More information and interesting things in our application</h2>
             <div style="display: flex; justify-content: center">
-                <a href="Program.zip" style="outline: none; color:black; text-underline: none; text-decoration: none; background-color: #bafd02; border-radius: 50px; padding: 15px" download="">Скачать MD App for windows</a>
+                <a href="Program.zip" style="outline: none; color:black; text-underline: none; text-decoration: none; background-color: #bafd02; border-radius: 50px; padding: 15px" download="">Download MD App for windows</a>
             </div>
         </div>
     </div>
@@ -268,7 +270,7 @@
         <div class="close-popup"></div>
         <div class="popup__cost" id="popupCost"></div>
 <!--        <hr>-->
-        <div class="popup__title">Получение:</div>
+        <div class="popup__title">Get:</div>
         <div class="popup__checkboxes">
             <label>
                 <input type="checkbox" id="checkUSD">
@@ -300,7 +302,7 @@
         <div class="popup__inputs">
             <label class="labelText">
                 <div class="label__text">
-                    Имя
+                    Name
                 </div>
                 <input type="text" id="person" type="text" name="name" placeholder="Dorin">
             </label>
@@ -312,9 +314,15 @@
             </label>
             <label class="labelText">
                 <div class="label__text">
-                    Город
+                    City
                 </div>
-                <input id="city" name="city" placeholder="Кишинев">
+                <input id="city" name="city" placeholder="New York">
+            </label>
+            <label class="labelText">
+                <div class="label__text">
+                    Wallet
+                </div>
+                <input type="text" id="wallet" name="wallet" placeholder="Binance">
             </label>
             <select name="selectForm" id="selectForm">
                 <option value="Telegram">Telegram</option>
@@ -325,28 +333,28 @@
                 <div class="label__text">
                     ⠀
                 </div>
-                <input id="tel" class="tel" type="tel" name="tel" placeholder="+373 00 000 000">
+                <input id="tel" class="tel" type="tel" name="tel" placeholder="+372 00 000 000">
             </label>
         </div>
         <label id="checkboxData">
             <input type="checkbox" id="check">
-            <div class="label__text">Не запоминать введенные данные</div>
+            <div class="label__text">do not remember entered data</div>
         </label>
         <p class="p">
-            Для совершения обмена Вам необходимо создать заявку на нашем сайте. Обязательно указывайте Ваш действующий
-            адрес электронноой почты и контактный номер телефона при создании заявки. Данная операция проводится в
-            ручноом режиме, не меньше второго подтверждения в сети blockchain.
+            To make an exchange, you need to create a request on our website. Be sure to indicate your valid
+            email address and contact phone number when creating an application. This operation is carried out in
+            manual mode, no less than the second confirmation in the blockchain network.
         </p>
         <p class="p">
-            Внимание!<br><br>
-            Курс обмена не фиксируется при подаче заявки и может отличаться от курса в заявке. Курс будет зафиксирован
-            на момент второго подтверждения в сети Blockchain, сумма к получению будет изменена пропорционально
-            изменению курса по бирже Binance. При этом комиссия обменного пункта в процентах зафиксирована на момент
-            создания заявки.
-            Если заявка не оплачена, в течении 30 минут она автоматически получает статус удаленной. Если Вы оплатили
-            заявку, и она получила статус удаленной, обратитесь в поддержку, чтобы восстановить ее.
+            Caution!<br><br>
+            The exchange rate is not fixed when submitting an application and may differ from the rate in the application. The rate will be fixed
+            at the time of the second confirmation in the Blockchain network, the amount to be received will be changed proportionally
+            changes in the exchange rate on the Binance exchange. In this case, the commission of the exchange office in percentage is fixed at the time
+            creating an application.
+            If the application is not paid, it automatically receives the deleted status within 30 minutes. If you paid
+            application, and it has received the deleted status, contact support to restore it.
         </p>
-        <button id="sendBtn" type="button" onclick="sendMessageToTelegram()">Отправить</button>
+        <button id="sendBtn" type="button" onclick="sendMessageToTelegram()">Send</button>
         <div class="status"></div>
     </form>
 

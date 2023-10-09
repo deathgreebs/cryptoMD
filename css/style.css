@@ -556,6 +556,7 @@ body {
   }
 }
 
+
 /*marquee {*/
 /*  margin-bottom: 130px;*/
 /*}*/
@@ -698,14 +699,15 @@ body {
   color: #FFFFFF;
   margin-right: 10px;
 }
+
 .main__wrap {
   display: flex;
 }
 .main__title {
   width: 587px;
-  font-family: "Russo One";
+  font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 56px;
   line-height: 56px;
   letter-spacing: -0.02em;
@@ -854,9 +856,9 @@ body {
   height: 72px;
   background: #bafd02;
   border-radius: 8px;
-  font-family: "Russo One";
+  font-family: "Inter";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 32px;
   line-height: 40px;
   letter-spacing: -0.02em;
@@ -1299,6 +1301,8 @@ input[type=radio]:checked + label:after {
   padding-top: 5px;
 }
 
+
+
 .popup button {
   display: flex;
   flex-direction: row;
@@ -1406,7 +1410,7 @@ input[type=radio]:checked + label:after {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 22px;
+  /*line-height: 22px;*/
   /* or 157% */
   /* Secondary/2 */
   color: #8D8D8D;
@@ -1459,5 +1463,20 @@ input[type=radio]:checked + label:after {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.cloud {
+  position: relative;
+}
 
+.block {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  width: 200px;
+  font-family: Candara;
+  background-color: white;
+  z-index: 44;
+  height: 55px;
+  position: absolute;
+  left: 30px;
+}
 /*# sourceMappingURL=style.css.map */
