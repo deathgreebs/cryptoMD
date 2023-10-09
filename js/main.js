@@ -359,8 +359,9 @@ function sendMessageToTelegram() {
             "\nВалюта: " + `${inputPrice.value} ${rc}` +
             "\nИмя: " + formData.get('name') +
         "\nТелефон: " + formData.get('tel') +
+    "\nMessenger: " + formData.get('selectForm') +
         "\nГород: " + formData.get('city') +
-        "\nГород: " + formData.get('wallet') +
+        "\nWallet: " + formData.get('wallet') +
         "\nEmail: " + formData.get('email') +
         "\nEUR: " + formData.get('checkEUR') +
         "\nUSD: " + formData.get('checkUSD') +
