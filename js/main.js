@@ -161,8 +161,13 @@ xhr.onload = () => {
 
 
     function setResult(rcc, vcc) {
+        console.log("VCC",vcc)
+        if(vcc==='MDL') {
+            valut.innerHTML = `<img src="../images/MDL.svg" alt=\"\">`
+        }
         res = cryptoPrice["RAW"][`${rcc}`][`${vcc}`]["PRICE"]
         coin.innerHTML = `<img src=\"images/${rcc}.svg\" alt=\"\">`
+
         valut.innerHTML = `<img src=\"images/${vcc}.svg\" alt=\"\">`
         return res
     }
